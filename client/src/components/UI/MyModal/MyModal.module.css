@@ -1,0 +1,22 @@
+.myModal{
+    position: fixed;
+    top: 0; /* растягиваем на весь экран*/
+    bottom: 0;/* растягиваем на весь экран*/
+    right: 0;/* растягиваем на весь экран*/
+    left: 0;/* растягиваем на весь экран*/
+    display: none;/* чтобы изначально модальное окно не было видно*/
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.myModalContent {/*стили контентной части*/
+    padding: 25px;
+    background: white;
+    border-radius: 16px;
+    min-width: 250px;
+}
+
+.myModal.active{/*класс отвечает за изменение  display: none*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
